@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+.so {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
+    background-color: #D32F2F;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Corpo do site */
+body {
+    width: 100%;
+    background-color: #2C3E50;
+    color: #E0E0E0;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+/* Container principal */
+.cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #34495E;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.box {
+    flex: 1;
+    padding: 17px;
+    text-align: left;
+}
+
+.md {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.pm {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+.pm1 {
+    font-weight: 700;
+    color: #FF5722;
+}
+
+/* Lista */
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Vídeo */
+.video-cont {
+    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.vd {
+    width: 75%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Botão */
+.cent {
+    justify-content: center;
+    display: flex;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #FF5722;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #D32F2F;
+    transform: scale(1.05);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box, .video-cont {
+        width: 100%;
+    }
+
+    .vd {
+        max-width: 100%;
+    }
+}
+
+
+/*.cont {
+    max-width: 800px;
+    margin: 20px 0 20px 50px auto;
+    padding: 40px;
+    background-color: #202020; /* Fundo escuro para contraste */
+  /*  border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);*/

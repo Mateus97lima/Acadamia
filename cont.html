@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Body & Mind</title>
+    <link rel="stylesheet" href="cont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+   <header>
+       <h1>Body & Mind</h1>
+   </header>
+
+   <main>
+       <div class="form-header">
+           <h2>Fale conosco</h2>
+           <p><strong>Preencha o formulário:</strong></p>
+       </div>
+
+       <form class="cont-z" action="#" method="post">
+           <label for="nome">Nome:</label>
+           <input type="text" id="nome" class="name" placeholder="Digite seu Nome" required>
+
+           <label for="cpf">CPF:</label>
+           <input type="text" id="cpf" class="CPF" placeholder="Digite seu CPF" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido no formato 000.000.000-00">
+
+           <label for="email">E-mail:</label>
+           <input type="email" id="email" class="E-mail" placeholder="Digite seu E-mail" required>
+
+           <label for="telefone">Telefone:</label>
+           <input type="tel" id="telefone" class="Telefone" placeholder="Digite seu Telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" title="Digite um telefone válido no formato (00) 00000-0000">
+
+           <label for="mensagem">Mensagem:</label>
+           <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="6" required></textarea>
+           <p class="obrigatorio">* Campo de preenchimento obrigatório</p>
+
+           <button type="submit" class="sub-mid">Enviar</button>
+       </form>
+   </main>
+
+   <aside>
+       <div class="col">
+           <section>
+               <h3>Conheça</h3>
+               <ul>
+                   <li><a href="#planos">Planos</a></li>
+                   <li><a href="#sobre-nos">Sobre nós</a></li>
+                   <li><a href="#canal-cliente">Canal do cliente</a></li>
+               </ul>
+           </section>
+
+           <section>
+               <h3>Veja Também</h3>
+               <ul>
+                   <li><a href="#contato">Contato</a></li>
+                   <li><a href="#indique-movel">Indique algum móvel</a></li>
+               </ul>
+           </section>
+
+           <section>
+               <h3>Siga Nós</h3>
+               <div class="social-links">
+                   <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                       <i class="bi bi-facebook"></i>
+                   </a>
+                   <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                       <i class="fab fa-instagram"></i>
+                   </a>
+                   <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                       <i class="fab fa-twitter"></i>
+                   </a>
+                   <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                       <i class="fab fa-linkedin"></i>
+                   </a>
+               </div>
+           </section>
+           <div class="txt">
+           <h1 class="body">Body & Mind</h1>
+          </div>
+       </div>
+   </aside>
+   
+
+   <div class="whatsapp-float">
+       <a href="https://wa.me/558899563497" target="_blank" aria-label="WhatsApp">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30">
+       </a>
+   </div>
+
+   <footer>
+       <a href="menu.html">Voltar ao Início</a>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal do Cliente - Body & Mind</title>
+    <link rel="stylesheet" href="cliente.css"> <!-- Certifique-se de que o arquivo CSS está no mesmo diretório -->
+</head>
+
+<body>
+    <header>
+        <h1 class="txt">Body & Mind</h1>
+    </header>
+
+    <main class="container">
+        <!-- Coluna das informações -->
+        <div class="info-column">
+            <h2>Bem-vindo ao Canal do Cliente</h2>
+            <h3>Aqui você pode gerenciar suas informações e interagir conosco de forma rápida e prática.</h3>
+            <p class="pg"><strong> O quer você pode fazer aqui?</strong></p>
+            <ul >
+                <li>Atualize seus dados cadastrais</li>
+                <li>Altere seu plano de assinatura</li>
+                <li>Alterar forma de pagamento</li>
+                <li>Consultar histórico de pagamentos</li>
+                <li>Envie feedback ou sugestões</li>
+            </ul>
+        </div>
+
+        <!-- Coluna do formulário -->
+        <div class="form-column">
+            <form class="form">
+                <div class="form-group">
+                    <label for="tipo-documento">Selecione o tipo de documento:</label>
+                    <select name="tipo-documento" id="tipo-documento">
+                        <option value="cpf">CPF</option>
+                        <option value="rg">RG</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="numero-documento">Número do documento:</label>
+                    <input type="number" id="numero-documento" name="documento" placeholder="Digite seu CPF ou RG">
+                </div>
+
+                <!-- Botão para confirmar a ação -->
+                <button type="button" onclick="validarDocumento()">Confirmar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a href="menu.html" class="btn-button">Voltar para o Início</a>
+    </footer>
+
+    <script>
+        // Função para validar o documento (exemplo básico)
+        function validarDocumento() {
+            const tipoDocumento = document.getElementById('tipo-documento').value;
+            const numeroDocumento = document.getElementById('numero-documento').value;
+
+            if (!numeroDocumento) {
+                alert('Por favor, insira o número do documento.');
+                return;
+            }
+
+            alert(`Documento selecionado: ${tipoDocumento.toUpperCase()}\nNúmero: ${numeroDocumento}`);
+        }
+    </script>
+</body>
+
+</html>

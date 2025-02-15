@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Header */
+header h1.txt {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    height: 100px;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #D32F2F;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/* Body */
+body {
+    min-height: 100vh; /* Altura mínima da tela */
+    background-color: #2C3E50;
+    color: #e0e0e0;
+    margin-left: 67px; /* Espaço para o menu lateral */
+    transition: margin-left 0.3s ease; /* Transição suave */
+}
+
+/* Menu Lateral */
+nav.menu-lateral {
+    width: 67px;
+    height: 100vh; /* Altura total da tela */
+    background-color: #202020;
+    padding: 40px 0px 40px 1%;
+    box-shadow: 5px 0px 0px #D32F2F;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: width 0.3s ease; /* Transição suave */
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+/* Botão de Expandir */
+.btn-expandi {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandi > i {
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Lista de Itens do Menu */
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: background 0.4s ease;
+}
+
+ul li.item-menu:hover {
+    background: #D32F2F; /* Vermelho ao passar o mouse */
+}
+
+ul li.ativo {
+    background-color: #D32F2F; /* Vermelho para o item ativo */
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center; /* Centraliza ícones e texto */
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 20px; /* Espaçamento menor */
+    transition: opacity 0.3s ease, margin-left 0.3s ease; /* Transição suave */
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 20px; /* Espaçamento ajustado */
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i {
+    font-size: 25px; /* Tamanho do ícone ajustado */
+    margin-left: 10px; /* Espaçamento menor */
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+    margin-left: 67px; /* Espaço para o menu lateral */
+    transition: margin-left 0.3s ease; /* Transição suave */
+}
+
+nav.menu-lateral.expandir ~ main {
+    margin-left: 300px; /* Ajuste quando o menu estiver expandido */
+}
