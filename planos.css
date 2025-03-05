@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Poppins:wght@300;600;700&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +9,7 @@
 
 body {
     max-width: 100%;
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    min-height: 100vh;
     background-color: #2C3E50;
     color: #E0E0E0;
     padding: 20px;
@@ -20,15 +19,20 @@ body {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center;
     height: 100px;
     font-size: 3rem;
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     background-color: #D32F2F;
     border-radius: 5px;
-    margin: 0 0 40px 0; /* Adiciona margem inferior */
+    margin: 0 0 40px 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 .containe {
@@ -36,65 +40,72 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 18px;
-    margin: 0 auto; /* Centraliza o container na tela */
+    margin: 0 auto;
     padding: 20px;
-    flex-wrap: wrap; /* Permite que os planos se reorganizem em telas menores */
+    flex-wrap: wrap;
 }
 
 .tabela {
     text-align: center;
     font-size: 30px;
     color: #ddd;
-    width: 100%; /* Garante que ocupe toda a largura */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .plano {
-    flex: 1 1 calc(33.333% - 40px); /* Ajusta o tamanho dos planos com gap */
+    flex: 1 1 calc(33.333% - 40px);
     border: 1px solid #ddd;
     border-radius: 20px;
     padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
     background-color: #34495E;
     color: #E0E0E0;
-    margin-bottom: 20px; /* Espaçamento entre os planos */
-}
-.plano-black{
-    background-color:#1A252F ;
-}
-.plano-mac{
-    background-color: #A93226;
-}
-
-
-.plano h3 {
-    font-size: 25px;
     margin-bottom: 20px;
-    color: white;
+   justify-content: space-between;
 }
 
-.plano p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #E0E0E0;
-    margin-bottom: 15px; /* Espaçamento abaixo dos parágrafos */
+.plano-black {
+    background-color: #1A252F;
 }
 
-.plano ul {
-    list-style: none;
-    justify-content: center;
-    padding: 0;
-    margin-bottom: 20px; /* Espaçamento abaixo da lista */
+.plano-mac {
+    background-color: #A93226;
+    display: inline-block;
 }
 
 .plano ul li {
-    list-style-type: none;
-    margin: 10px 0;
-    padding: 0;
-    color: #E0E0E0;
     font-size: 16px;
 }
+
+.btn-button {
+    background-color: #D32F2F;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 28px;
+}
+
+.btn-button:hover {
+    background-color: #B71C1C;
+}
+
+@media (max-width: 768px) {
+    .plano {
+        flex: 1 1 100%;
+    }
+
+    .ti {
+        font-size: 2rem;
+        height: 80px;
+    }
+}
+
 
 .plano .btn-button {
     background-color: #D32F2F;
@@ -112,9 +123,118 @@ body {
 .plano .btn-button:hover {
     background-color: #B71C1C;
 }
-/*plano black*/
+.col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 30px; /* Espaço entre as colunas */
+    padding: 40px; /* Espaçamento interno */
+    background-color: #444; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto; /* Centraliza o contêiner */
+    width: 90%; /* Largura do contêiner (ajuste conforme necessário) */
+    max-width: 1200px; /* Largura máxima */
+    position: relative; /* Para posicionar elementos internos */
+    text-align: center; /* Centraliza o texto */
+    margin-top: -120px;
+}
+.txt {
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto para contraste */
+}
+
+.tv{
+        text-align: center; /* Centraliza o título */
+        color: white; /* Mantém a cor do texto */
+        font-size: 3rem; /* Ajusta o tamanho da fonte */
+        font-weight: bold;
+        margin-top:20px; /* Ajusta o espaçamento */
+        padding-bottom: 30px; /* Espaço antes da linha */
+        border-bottom: 3px solid red; /* Linha fina vermelha */
+        display: block;
+        padding-top: 20px;
+    }
 
 
+aside {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ocupa toda a largura */
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+h3 {
+   
+    font-size: 1.7rem;
+    gap: 3px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 19px;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    margin-top: 15px;
+    gap: 40px;
+
+    color:white ;
+}
+.li{
+    color: #007BFF;
+    font-size: 1.5rem;
+}
+
+.plano-mac ul li{
+    gap: 40px;
+}
+ul li a {
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: #007BFF;
+    margin-left: 120px;
+    transition: color 0.3s ease;
+    font-size: 1.3rem;
+}
+
+ul li a:hover {
+    color: #0056b3;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    color: #0056b3;
+    transition: color 0.3s ease;
+    padding: 1px; /* Adiciona espaço interno */
+}
+.pt{
+    font-family:'Outfit', sans-serif; ;
+    font-size: 25px;
+    margin: 18px;
+    gap: 19px;
+    color: white;
+}
+
+.price{
+    font-size: 23px;
+    gap: 15px;
+    color: white;
+}
 
 .tb{
     text-align: center;

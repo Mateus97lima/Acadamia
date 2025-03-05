@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Outfit', sans-serif;
 }
+/* Definição de fonte para títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;}
 
 /* Header */
 header h1.txt {
@@ -22,6 +23,7 @@ header h1.txt {
     background-color: #FF5252; /* Vermelho mais suave */
     border-radius: 5px;
     margin: 0;
+    margin-top: 20px;
 }
 
 body {
@@ -127,6 +129,137 @@ select, input {
     font-size: 16px;
     color: #333;
 }
+.col  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 30px; /* Espaço entre as colunas */
+    padding: 40px; /* Espaçamento interno */
+    background-color: #444; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto; /* Centraliza o contêiner */
+    width: 90%; /* Largura do contêiner (ajuste conforme necessário) */
+    max-width: 1200px; /* Largura máxima */
+    position: relative; /* Para posicionar elementos internos */
+    text-align: center; /* Centraliza o texto */
+    margin-top: -90px;
+}
+col h3 {
+    color: #007BFF; /* Cor do título */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    text-align: center; /* Centraliza o título */
+}
+ ul li a{
+    align-items: center;
+    margin-left: 110px;
+    font-size: 1.3rem;
+  
+}
+col ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+.col ul li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+    text-align: center; /* Centraliza os itens da lista */
+}
+
+.col ul li a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #007BFF; /* Cor do link */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.col ul li a:hover {
+    color: white; /* Cor do link ao passar o mouse */
+}
+
+.col .social-links {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones das redes sociais */
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+.col .social-links a {
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    color: #007BFF; /* Cor dos ícones */
+    transition: color 0.3s ease; /* Transição suave de cor */
+}
+
+.col .social-links a:hover {
+    color: #007BFF; /* Cor dos ícones ao passar o mouse */
+}
+
+.txt {
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto para contraste */
+}
+
+.tv{
+        text-align: center; /* Centraliza o título */
+        color: white; /* Mantém a cor do texto */
+        font-size: 3rem; /* Ajusta o tamanho da fonte */
+        font-weight: bold;
+        margin-top:20px; /* Ajusta o espaçamento */
+        padding-bottom: 30px; /* Espaço antes da linha */
+        border-bottom: 3px solid red; /* Linha fina vermelha */
+        display: block;
+        padding-top: 20px;
+    }
+
+
+aside {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 60px 0; /* Removi a max-width */
+    width: 100%; /* Ocupa toda a largura */
+    padding-top: 110px;
+    padding-bottom: 200px;
+}
+
+h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #0056b3;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #0056b3;
+    transition: color 0.3s ease;
+    padding: 1px; /* Adiciona espaço interno */
+}
+
 
 button {
     background-color: #e67e22;

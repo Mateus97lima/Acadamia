@@ -6,6 +6,7 @@
     box-sizing: border-box;
 }
 
+
 /* Cabeçalho */
 .so {
     text-align: center;
@@ -77,6 +78,92 @@ ul {
 
 li {
     margin-bottom: 8px;
+}
+
+/*infor-baixo*/
+.col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 30px; /* Espaço entre as colunas */
+    padding: 40px; /* Espaçamento interno */
+    background-color: #444; /* Cor de fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 0 auto; /* Centraliza o contêiner */
+    width: 90%; /* Largura do contêiner (ajuste conforme necessário) */
+    max-width: 1200px; /* Largura máxima */
+    position: relative; /* Para posicionar elementos internos */
+    text-align: center; /* Centraliza o texto */
+    margin-top: -120px;
+}
+.txt {
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto para contraste */
+}
+
+.tv{
+        text-align: center; /* Centraliza o título */
+        color: white; /* Mantém a cor do texto */
+        font-size: 3rem; /* Ajusta o tamanho da fonte */
+        font-weight: bold;
+        margin-top:20px; /* Ajusta o espaçamento */
+        padding-bottom: 30px; /* Espaço antes da linha */
+        border-bottom: 3px solid red; /* Linha fina vermelha */
+        display: block;
+        padding-top: 20px;
+    }
+
+
+aside {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 60px 0; /* Removi a max-width */
+    width: 100%; /* Ocupa toda a largura */
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    align-items:center;
+    text-align: left;
+    font-size: 1.3rem;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #0056b3;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: #0056b3;
+    transition: color 0.3s ease;
+    padding: 1px; /* Adiciona espaço interno */
 }
 
 /* Vídeo */

@@ -1,10 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif; /* Garante que toda a página use Poppins */
+    }
+
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #2c2c2c;
-    color: #333;
+    color: #eeeeee;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Títulos */
+h2, h3 {
+    font-weight: 700; /* Usa o peso mais forte da fonte Poppins */
+}
+
+h2 {
+    color: #007BFF;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
 }
 
 header {
@@ -17,13 +44,11 @@ header {
 }
 
 h1 {
-    margin: 0;
     font-size: 2.5rem;
 }
 
 main {
     flex: 1;
-    background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,14 +56,29 @@ main {
     max-width: 800px;
 }
 
-.form-header {
+h2 {
+    color: #007BFF;
+    font-size: 2rem;
     text-align: center;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
-h2 {
+h3 {
     color: #007BFF;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    color: #d0d6dc;
+    margin-bottom: 10px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .cont-z {
@@ -47,33 +87,23 @@ h2 {
 }
 
 .cont-z label {
-    margin-bottom: 5px;
     font-weight: bold;
     color: #555;
 }
 
 .cont-z input,
 .cont-z textarea {
-    margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
-}
-
-.cont-z input:focus,
-.cont-z textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    margin-bottom: 15px;
 }
 
 .obrigatorio {
     font-size: 0.875rem;
     color: #777;
-    margin-top: -10px;
-    margin-bottom: 15px;
 }
 
 .sub-mid {
@@ -91,125 +121,77 @@ h2 {
     background-color: #0056b3;
 }
 
-/* Layout de 3 colunas */
 .col {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 30px; /* Espaço entre as colunas */
-    padding: 40px; /* Espaçamento interno */
-    background-color: #444; /* Cor de fundo */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 0 auto; /* Centraliza o contêiner */
-    width: 90%; /* Largura do contêiner (ajuste conforme necessário) */
-    max-width: 1200px; /* Largura máxima */
-    position: relative; /* Para posicionar elementos internos */
-    text-align: center; /* Centraliza o texto */
-}
-
-.col h3 {
-    color: #007BFF; /* Cor do título */
-    font-size: 1.5rem; /* Tamanho da fonte */
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    text-align: center; /* Centraliza o título */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
 }
 
 .col ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
-}
-
-.col ul li {
-    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
-    text-align: center; /* Centraliza os itens da lista */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .col ul li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #007BFF; /* Cor do link */
-    transition: color 0.3s ease; /* Transição suave de cor */
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
 }
 
 .col ul li a:hover {
-    color: #0056b3; /* Cor do link ao passar o mouse */
+    color: white;
 }
 
 .col .social-links {
     display: flex;
-    justify-content: center; /* Centraliza os ícones das redes sociais */
-    gap: 20px; /* Espaço entre os ícones */
+    justify-content: center;
+    gap: 20px;
 }
 
 .col .social-links a {
-    font-size: 1.5rem; /* Tamanho dos ícones */
-    color: #007BFF; /* Cor dos ícones */
-    transition: color 0.3s ease; /* Transição suave de cor */
+    font-size: 1.5rem;
+    color: #007BFF;
+    transition: color 0.3s ease;
 }
 
 .col .social-links a:hover {
-    color: #007BFF; /* Cor dos ícones ao passar o mouse */
+    color: #0056b3;
 }
 
-.col h1 {
-    text-align: center; /* Centraliza o título "Body & Mind" */
-    color: white; /* Cor do texto */
-    font-size: 2rem; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    margin-top: 20px; /* Espaçamento acima do título */
-    padding-bottom: 30px; /* Espaço antes da linha */
-    border-bottom: 2px solid red; /* Linha fina vermelha */
-    display: inline-block; /* Ajusta o tamanho ao conteúdo */
+.tv {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid red;
+    padding-top: 20px;
 }
-
-
-
-.txt {
-    text-align: center; /* Centraliza o texto */
-    color: white; /* Cor do texto para contraste */
-}
-
-.body{
-        text-align: center; /* Centraliza o título */
-        color: white; /* Mantém a cor do texto */
-        font-size: 2rem; /* Ajusta o tamanho da fonte */
-        font-weight: bold;
-        margin-top:20px; /* Ajusta o espaçamento */
-        padding-bottom: 30px; /* Espaço antes da linha */
-        border-bottom: 2px solid red; /* Linha fina vermelha */
-        display: inline-block;
-    }
-    
-
 
 aside {
     background-color: #444;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0; /* Removi a max-width */
-    width: 100%; /* Ocupa toda a largura */
-}
-
-h3 {
-    color: #007BFF;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
+    margin: 20px 0;
+    width: 100%;
 }
 
 ul li a {
     text-decoration: none;
-    color: #007BFF;
+    color: #d0d6dc;
     transition: color 0.3s ease;
+    font-size: 1.3rem;
 }
 
 ul li a:hover {
@@ -267,17 +249,16 @@ footer a:hover {
     color: #ffcccb;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .col {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
-        padding: 20px; /* Reduzi o padding */
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .col {
-        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
-        padding: 10px; /* Reduzi o padding */
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
 }

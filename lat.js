@@ -16,3 +16,5 @@ let menuside = document.querySelector('.menu-lateral')
 exp.addEventListener('click',function(){
     menuside.classList.toggle('expandir')
 })
+
+
