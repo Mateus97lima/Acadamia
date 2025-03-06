@@ -5,9 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Definição de fonte para títulos */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;}
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Header */
 header h1.txt {
@@ -20,16 +22,17 @@ header h1.txt {
     font-family: 'Poppins', sans-serif;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    background-color: #FF5252; /* Vermelho mais suave */
+    background-color: #FF5252;
     border-radius: 5px;
     margin: 0;
     margin-top: 20px;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #2c3e50; /* Fundo azul escuro */
-    color: #f0f0f0; /* Texto cinza claro */
+    background-color: #2c3e50;
+    color: #f0f0f0;
     padding: 20px;
     margin: 0;
 }
@@ -40,32 +43,31 @@ header {
 }
 
 h1 {
-    color: #fff; /* Título branco */
+    color: #fff;
 }
 
 h2 {
     font-weight: 800;
     color: #FF5722;
-    font-family: 'Poppins', sans-serif;
-    font-size:35px ;
-    
+    font-size: 35px;
 }
-h3{
+
+h3 {
     line-height: 1.5;
     font-weight: 400;
-    font-size:26px;
+    font-size: 26px;
 }
+
 .pg {
-    color: #f0f0f0; /* Texto cinza claro para informações */
+    color: #f0f0f0;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     margin: 8px;
     padding: 3px;
 }
 
 .pt {
-    color: #f0f0f0; /* Texto cinza claro para elementos específicos */
+    color: #f0f0f0;
 }
 
 ul {
@@ -78,36 +80,36 @@ ul li {
     margin: 10px 0;
     padding: 10px;
     border-radius: 5px;
-    color: #f0f0f0; /* Texto cinza claro */
+    color: #f0f0f0;
 }
 
 .container {
     display: flex;
-    gap: 20px; /* Espaço entre as colunas */
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    gap: 20px;
+    justify-content: flex-start;
     align-items: flex-start;
-    max-width: 1200px; /* Limita a largura máxima do container */
-    margin: 0; /* Remove a margem automática para centralização */
-    padding-left: 20px; /* Adiciona um pequeno padding à esquerda */
+    max-width: 1200px;
+    margin: 0;
+    padding-left: 20px;
 }
 
 .info-column {
     flex: 2;
     font-family: Arial, sans-serif;
     font-size: 20px;
-    margin-left: 0; /* Remove a margem esquerda */
+    margin-left: 0;
 }
 
 .form-column {
     flex: 1;
     background-color: #fff;
     align-items: center;
-    padding: 60px; /* Padding reduzido */
-    margin: 80px; /* Margem reduzida */
+    padding: 60px;
+    margin: 80px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #000;
-    max-width: 400px; /* Largura máxima do formulário */
+    max-width: 400px;
 }
 
 .form-group {
@@ -118,7 +120,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #3498db; /* Azul claro para rótulos */
+    color: #3498db;
 }
 
 select, input {
@@ -129,95 +131,97 @@ select, input {
     font-size: 16px;
     color: #333;
 }
-.col  {
+
+.col {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 30px; /* Espaço entre as colunas */
-    padding: 40px; /* Espaçamento interno */
-    background-color: #444; /* Cor de fundo */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 0 auto; /* Centraliza o contêiner */
-    width: 90%; /* Largura do contêiner (ajuste conforme necessário) */
-    max-width: 1200px; /* Largura máxima */
-    position: relative; /* Para posicionar elementos internos */
-    text-align: center; /* Centraliza o texto */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 40px;
+    background-color: #444;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    text-align: center;
     margin-top: -90px;
 }
-col h3 {
-    color: #007BFF; /* Cor do título */
-    font-size: 1.5rem; /* Tamanho da fonte */
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    text-align: center; /* Centraliza o título */
+
+.col h3 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: center;
 }
- ul li a{
+
+ul li a {
     align-items: center;
     margin-left: 110px;
     font-size: 1.3rem;
-  
 }
-col ul {
-    list-style-type: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding padrão */
-    margin: 0; /* Remove a margem padrão */
+
+.col ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .col ul li {
-    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
-    text-align: center; /* Centraliza os itens da lista */
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .col ul li a {
-    text-decoration: none; /* Remove o sublinhado dos links */
-    color: #007BFF; /* Cor do link */
-    transition: color 0.3s ease; /* Transição suave de cor */
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
 }
 
 .col ul li a:hover {
-    color: white; /* Cor do link ao passar o mouse */
+    color: white;
 }
 
 .col .social-links {
     display: flex;
-    justify-content: center; /* Centraliza os ícones das redes sociais */
-    gap: 20px; /* Espaço entre os ícones */
+    justify-content: center;
+    gap: 20px;
 }
 
 .col .social-links a {
-    font-size: 1.5rem; /* Tamanho dos ícones */
-    color: #007BFF; /* Cor dos ícones */
-    transition: color 0.3s ease; /* Transição suave de cor */
+    font-size: 1.5rem;
+    color: #007BFF;
+    transition: color 0.3s ease;
 }
 
 .col .social-links a:hover {
-    color: #007BFF; /* Cor dos ícones ao passar o mouse */
+    color: #007BFF;
 }
 
 .txt {
-    text-align: center; /* Centraliza o texto */
-    color: white; /* Cor do texto para contraste */
+    text-align: center;
+    color: white;
 }
 
-.tv{
-        text-align: center; /* Centraliza o título */
-        color: white; /* Mantém a cor do texto */
-        font-size: 3rem; /* Ajusta o tamanho da fonte */
-        font-weight: bold;
-        margin-top:20px; /* Ajusta o espaçamento */
-        padding-bottom: 30px; /* Espaço antes da linha */
-        border-bottom: 3px solid red; /* Linha fina vermelha */
-        display: block;
-        padding-top: 20px;
-    }
-
+.tv {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid red;
+    display: block;
+    padding-top: 20px;
+}
 
 aside {
     background-color: #444;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 60px 0; /* Removi a max-width */
-    width: 100%; /* Ocupa toda a largura */
+    margin: 60px 0;
+    width: 100%;
     padding-top: 110px;
     padding-bottom: 200px;
 }
@@ -257,9 +261,8 @@ ul li a:hover {
     font-size: 1.5rem;
     color: #0056b3;
     transition: color 0.3s ease;
-    padding: 1px; /* Adiciona espaço interno */
+    padding: 1px;
 }
-
 
 button {
     background-color: #e67e22;
@@ -273,7 +276,7 @@ button {
 }
 
 button:hover {
-    background-color: #f39c12; /* Laranja mais claro no hover */
+    background-color: #f39c12;
 }
 
 footer {
@@ -290,22 +293,60 @@ footer {
 }
 
 .btn-button:hover {
-    background-color: #f39c12; /* Laranja mais claro no hover */
+    background-color: #f39c12;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
-        align-items: center; /* Centraliza as colunas em telas pequenas */
+        align-items: center;
+        padding-left: 0;
     }
 
     .form-column {
-        max-width: 100%; /* Ocupa toda a largura em telas pequenas */
+        max-width: 100%;
         padding: 20px;
-        margin: 20px;
+        margin: 20px 0;
     }
 
     header h1.txt {
-        font-size: 2rem; /* Tamanho menor para telas pequenas */
+        font-size: 2rem;
+    }
+
+    .col {
+        grid-template-columns: 1fr;
+        padding: 20px; /* Reduzido para maior espaçamento em telas pequenas */
+    }
+
+    .social-links a {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1.txt {
+        font-size: 1.6rem; /* Ajuste adicional para telas muito pequenas */
+    }
+
+    .form-column {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .col {
+        grid-template-columns: 1fr;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 14px;
     }
 }

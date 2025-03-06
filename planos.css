@@ -262,11 +262,42 @@ ul li a:hover {
 /* Responsividade */
 @media (max-width: 768px) {
     .plano {
-        flex: 1 1 100%; /* Planos ocupam toda a largura em telas menores */
+        flex: 1 1 100%; /* Ocupa toda a largura da tela */
+        margin-bottom: 20px;
+        padding: 15px;
     }
 
     .ti {
-        font-size: 2rem; /* Reduz o tamanho do título em telas menores */
-        height: 80px;
+        font-size: 2rem; /* Reduz o tamanho do título */
+        height: auto;
+        padding: 15px;
+    }
+
+    .col {
+        grid-template-columns: 1fr; /* Muda para uma única coluna */
+        gap: 20px; /* Reduz o espaçamento */
+        padding: 20px;
+    }
+
+    .tv {
+        font-size: 2.2rem; /* Reduz o tamanho do título */
+        padding-bottom: 15px;
+    }
+
+    ul li {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        margin-top: 10px;
+    }
+
+    .btn-button {
+        width: 100%; /* Ocupa toda a largura */
+        text-align: center;
+        padding: 12px;
+    }
+
+    .btn-volta {
+        width: 100%;
+        text-align: center;
     }
 }
+
